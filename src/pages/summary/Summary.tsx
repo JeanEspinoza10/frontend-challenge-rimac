@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 
 export const Summary = () => {
   const { user } = useData();
-  const [isLoad, setIsLoad] = useState(false);
+  const [isLoad, setIsLoad] = useState(true);
   const navigate = useNavigate();
 
   useEffect(() => {
