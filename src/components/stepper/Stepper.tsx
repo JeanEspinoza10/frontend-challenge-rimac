@@ -1,5 +1,5 @@
 import React from "react";
-import "./Stepper.scss";
+import "@/components/stepper/stepper.scss";
 
 interface Step {
   number: number;
