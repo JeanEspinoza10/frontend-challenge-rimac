@@ -1,0 +1,11 @@
+@use '@/styles/var' as *;
+.app {
+  display: grid;
+  grid-template-rows: auto 1fr auto; // Header - Main - Footer
+  min-height: 100vh;
+}
+
+.app__main {
+  overflow-y: auto; 
+  min-height: 0; 
+}

@@ -1,0 +1,120 @@
+.home__content_group_inline {
+  width: 352px;
+  height: auto;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+.home__content-form-group-inline {
+  margin: 0px;
+  width: 100%;
+  height: 55px;
+  border-radius: 8px;
+  border: 1px solid #5e6488;
+  color: #f8f9ff;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.home__content-select {
+  border: none;
+  margin: 0px;
+  width: 140px;
+  height: 100%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 0 16px;
+  gap: 8px;
+}
+
+.home__content-input--doc {
+  border: none;
+  width: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-left: 1px solid #5e6488;
+  padding: 8px 16px;
+}
+
+.home__content-input--full {
+  width: 100%;
+  height: 56px;
+  padding: 8px 16px;
+  border: 1px solid #5e6488;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.home__content-checkbox-group {
+  width: 351px;
+  height: 84px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.home__content-checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  width: auto;
+  height: 20px;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #0a051e;
+}
+.home__content-checkbox-input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #5e6488;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  background-color: white;
+}
+
+.home__content-checkbox-input:checked {
+  background-color: #0a051e;
+  border-color: #0a051e;
+}
+
+.home__content-checkbox-input:checked::after {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.home__content-link {
+  color: #03050f;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  font-weight: 600;
+}
+
+.home__content-button{
+    margin-top: 10px;
+    width: 195px;
+    height: 64px;
+    border-radius: 40px;
+    padding: 20px 40px;
+    gap: 8px;
+    background-color: #03050F;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    font-weight: 700;
+    line-height: 24px;
+    align-items: center;
+    cursor:pointer;
+}

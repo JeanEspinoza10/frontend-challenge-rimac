@@ -1,0 +1,81 @@
+@use '@/styles/var' as *;
+
+.header {
+  background-color: #fff;
+  width: 100%;
+
+  &__container {
+    max-width: $max-width;     
+    margin: 0 auto; 
+    padding: 2px 120px;
+    height: 64px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 73.19px;
+    height: 36px;
+  }
+
+  &__nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__list {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    &--highlight {
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 16px;
+      letter-spacing: 0.2px;
+      text-align: right;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__phone {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    text-align: right;
+  }
+
+  @media (max-width: 650px) {
+    &__container {
+      padding: 12px 24px;
+      height: 56px;
+    }
+
+    &__item {
+      &--highlight {
+        display: none; // ocultamos en móviles
+      }
+    }
+
+    &__phone {
+      font-size: 16px;
+    }
+  }
+}

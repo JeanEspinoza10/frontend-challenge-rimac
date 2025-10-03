@@ -1,0 +1,58 @@
+@use '@/styles/var' as *;
+
+.footer {
+  background-color: #03050f;
+  color: #ffffff;
+  width: 100%;
+
+  &__container {
+    max-width: $max-width;  
+    margin: 0 auto; 
+    height: 106px;
+    padding: 32px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 85.39px;
+    height: 42px;
+    filter: brightness(0) invert(1);
+  }
+
+  &__line {
+    display: none;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  @media (max-width: 650px) {
+    &__container {
+      flex-direction: column;
+      height: 152px;
+      padding: $padding-base-responsive;
+      gap: 24px;
+      justify-content: center;
+      align-content: center;
+    }
+
+    &__line {
+      display: block;
+      width: 100%;
+      max-width: 336px;
+      height: 1px;
+      background-color: #2b304e;
+    }
+
+    &__text {
+      font-size: 12px;
+      line-height: 20px;
+      text-align: center;
+    }
+  }
+}
